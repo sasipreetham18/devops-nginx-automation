@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ANSIBLE_DIR = "."
+        ANSIBLE_DIR = "ansible"
         PLAYBOOK = "nginx-playbook.yml"
         HOSTS_FILE = "hosts"
     }
