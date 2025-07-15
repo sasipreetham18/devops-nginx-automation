@@ -1,6 +1,6 @@
 ---
 - name: Install and Start Nginx on Localhost
-  hosts: webservers
+  hosts: localhost
   become: true
 
   tasks:
@@ -13,7 +13,7 @@
         name: nginx
         state: present
 
-    - name: Start and enable Nginx
+    - name: Start Nginx
       service:
         name: nginx
         state: started
